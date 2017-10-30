@@ -7,7 +7,6 @@ from nodb import NoDB
 from random import shuffle
 
 tweet_content = "tweet-content.txt"
-tweet_lookup = "tweet-lookup.shelve"
 logging.basicConfig(filename='tweet.log', level=logging.WARNING)
 
 
@@ -70,7 +69,7 @@ def tweet(a, b):
     db = get_db()
     db.save({"content": tweet,
              "last_sent": int(time.time()),
-             "from": "newton"})
+             "from": "luther"})
 
 
 if __name__ == '__main__':
